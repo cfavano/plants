@@ -76,6 +76,16 @@ a:hover {
   display: block;
 } 
 
+.library-gardening .media-left a {
+  display: block;
+  height: 64px;
+  width: 64px;
+}
+
+.library-gardening img.media-object {
+  width: 64px;
+  height: 64px;
+}
 /* Plant Library styles */
 .library-plants figure {
   position: relative;
@@ -97,4 +107,10 @@ a:hover {
 
 .library-plants a:hover figcaption {
   background: rgba(0,0,0, .6);
+}
+
+/* Plant Gallery */
+.plant-gallery [class*=' col-'] {
+  margin: 0;
+  padding: 0;
 }
