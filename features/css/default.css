@@ -70,3 +70,31 @@ a:hover {
 .strong {
   font-weight: bold;
 }
+
+/* Gardening Library styles */
+.library-gardening .read-more {
+  display: block;
+} 
+
+/* Plant Library styles */
+.library-plants figure {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.library-plants figcaption.h4 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  background: rgba(0,0,0, .5);
+}
+
+.library-plants a:hover figcaption {
+  background: rgba(0,0,0, .6);
+}
