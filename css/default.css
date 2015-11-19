@@ -71,7 +71,7 @@ a:hover {
   font-weight: bold;
 }
 
-/* Gardening Library styles */
+/* Gardening Tips Library Page */
 .library-gardening .read-more {
   display: block;
 } 
@@ -86,7 +86,7 @@ a:hover {
   width: 64px;
   height: 64px;
 }
-/* Plant Library styles */
+/* Plant Library Page */
 .library-plants figure {
   position: relative;
   margin-bottom: 15px;
@@ -109,8 +109,22 @@ a:hover {
   background: rgba(0,0,0, .6);
 }
 
-/* Plant Gallery */
+/* Plant Gallery Page*/
 .plant-gallery [class*=' col-'] {
   margin: 0;
   padding: 0;
+}
+
+/* Store Page */
+.options-form p {
+  margin: 0;
+  text-align: center;
+}
+
+.options-form .form-group.quantity{
+  max-width: 120px;
+  margin: 0 auto;
+}
+.options-form .item-name {
+  font-weight: bold;
 }
