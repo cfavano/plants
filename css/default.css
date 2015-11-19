@@ -7,6 +7,7 @@ h3, .h3,
 h4, .h4,
 h5, .h4,
 h6, .h6 {
+  font-family: 'Noto Sans', sans-serif;
   font-weight:bold;
 }
 
@@ -125,6 +126,40 @@ a:hover {
   max-width: 120px;
   margin: 0 auto;
 }
+
 .options-form .item-name {
   font-weight: bold;
+}
+
+/*Checkout form */
+.checkout-form .credit-info {
+  margin-top: 15px;
+}
+.checkout-form button.btn-success {
+  width: 100%;
+}
+
+/* Order Summary in Checkout Form */
+.checkout-form .order-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-form .summary-header {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.checkout-form ul {
+  margin: 0 18px 10px;
+  padding: 10px 14px;
+  list-style-type: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkout-form .order-container button {
+  display: block;
+  max-width: 71px;
+  margin: 0 auto 10px;
 }

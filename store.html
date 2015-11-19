@@ -18,6 +18,172 @@
 <body class="store">
   <div class="container">
     <div class="row">
+      <div class="col-md-2 col-md-offset-10">
+        <button class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout</button>
+      </div>
+      <!-- Checkout Form -->
+      <div class="modal fade" id="checkout-form" tabindex="-1" role="dialog" aria-labelledby="my-checkout-form">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Checkout Form</h4>
+            </div>
+            <div class="modal-body">
+              <form action="#" method="post" class="checkout-form">
+                <div class="row">
+                  <!-- Order Form -->
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <!-- First Name -->
+                     <!-- <label for="fistname">First Name:</label>-->
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                      <!-- Last Name -->
+                      <!--<label for="fistname">Last Name:</label>-->
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div> 
+                    <div class="form-group">
+                      <!-- Last Name -->
+                      <!--<label for="email">Email:</label>-->
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div> 
+                    <div class="form-group">
+                      <!-- Street Address -->
+                      <!--<label for="address">Address:</label> -->
+                      <input type="address" class="form-control" placeholder="Address">
+                    </div> 
+                    <div class="row"> 
+                      <div class="form-group col-md-6">
+                        <!-- City  -->
+                        <!--<label for="city">City:</label>-->
+                        <input type="city" class="form-control" placeholder="City">
+                      </div> 
+                      <div class="form-group col-md-2">
+                        <!-- State Form Control -->
+                        <!--<label for="State">State:</label>-->
+                        <select name="state">
+                          <option value="AL">AL</option>
+                          <option value="AK">AK</option>
+                          <option value="AZ">AZ</option>
+                          <option value="AR">AR</option>
+                          <option value="CA">CA</option>
+                          <option value="CO">CO</option>
+                          <option value="CT">CT</option>
+                          <option value="DE">DE</option>
+                          <option value="DC">DC</option>
+                          <option value="FL">FL</option>
+                          <option value="GA">GA</option>
+                          <option value="HI">HI</option>
+                          <option value="ID">ID</option>
+                          <option value="IL">IL</option>
+                          <option value="IN">IN</option>
+                          <option value="IA">IA</option>
+                          <option value="KS">KS</option>
+                          <option value="KY">KY</option>
+                          <option value="LA">LA</option>
+                          <option value="ME">ME</option>
+                          <option value="MD">MD</option>
+                          <option value="MA">MA</option>
+                          <option value="MI">MI</option>
+                          <option value="MN">MN</option>
+                          <option value="MS">MS</option>
+                          <option value="MO">MO</option>
+                          <option value="MT">MT</option>
+                          <option value="NE">NE</option>
+                          <option value="NV">NV</option>
+                          <option value="NH">NH</option>
+                          <option value="NJ">NJ</option>
+                          <option value="NM">NM</option>
+                          <option value="NY">NY</option>
+                          <option value="NC">NC</option>
+                          <option value="ND">ND</option>
+                          <option value="OH">OH</option>
+                          <option value="OK">OK</option>
+                          <option value="OR">OR</option>
+                          <option value="PA">PA</option>
+                          <option value="RI">RI</option>
+                          <option value="SC">SC</option>
+                          <option value="SD">SD</option>
+                          <option value="TN">TN</option>
+                          <option value="TX">TX</option>
+                          <option value="UT">UT</option>
+                          <option value="VT">VT</option>
+                          <option value="VA">VA</option>
+                          <option value="WA">WA</option>
+                          <option value="WV">WV</option>
+                          <option value="WI">WI</option>
+                          <option value="WY">WY</option>
+                        </select>       
+                      </div>
+                      <div class="form-group col-md-4">
+                        <!-- Zip  -->
+                        <!--<label for="zip">Zip:</label> -->
+                        <input type="zip" class="form-control" placeholder="zip">
+                      </div> 
+                    </div>
+                    <p>Billing address same as shipping? </p>
+                      <input type="radio" name="same-shipping" value="yes" />
+                      Yes
+                      <input type="radio" name="same-shiping" value="no" />
+                      No
+                    <hr>
+                    <p class="credit-info">Payment Information</p>
+                    <div class="form-group">
+                      <!-- Cardholder Name  -->
+                      <!--<label for="credit-name">Cardholder Name:</label> -->
+                      <input type="credit-name" class="form-control" placeholder="Cardholder Name">
+                    </div> 
+                    <div class="form-group ">
+                      <!-- Credit Card Number  -->
+                      <!--<label for="credeit-number">Credit Card Number:</label> -->
+                      <input type="text" class="form-control" placeholder="Credit Card Number">
+                    </div> 
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <!-- Expiration Date  -->
+                        <!--<label for="expiration">Exp Date:</label> -->
+                        <input type="date" class="form-control" placeholder="Expiration Date">
+                      </div> 
+                      <div class="form-group col-md-6">
+                        <!-- Security COde  -->
+                        <!--<label for="security-code">Security Code:</label> -->
+                      <input type="code" class="form-control" placeholder="Security Code">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <button type="submit" class="btn btn-success">Place Order</button>
+                      </div>
+                      <div class="col-sm-6">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                  </div> 
+                  <!-- Order Summary -->
+                  <div class="col-sm-4">
+                    <div class="order-container">
+                      <p class="text-center summary-header">Summary</p>
+                      <ul>
+                        <li>Item - Quantity</li>
+                        <li>Item - Quantity</li>
+                        <li>Item - Quantity</li>
+                        <li>Item - Quantity</li>
+                      </ul>
+                      <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Edit Order</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-wrap">
+    <div class="row">
       <div class="col-sm-12">
         <h1>Plants for Sale</h1>
         <!-- Plant Selection Form -->
@@ -409,14 +575,10 @@
                 <input type="number" name="quantity" min="1" max="30">
               </div>
             </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-success">Place Order</button>
+            </div>
           </div>
-          <div class="col-md-3">
-            <button type="submit" class="btn btn-success">Place Order</button>
-          </div>
-        </form>
-        <!-- Checkout Form -->
-        <form class="checkout-form"  action="#" method="post">
-
         </form>
       </div>
     </div>
