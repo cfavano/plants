@@ -1,0 +1,14 @@
+Customers
+  -Name
+  -Location
+  -Username/account
+
+Orders
+  -Items
+  -Delivery Date
+
+Gallery 
+  -Image
+
+Library 
+  -Articles/Subjects

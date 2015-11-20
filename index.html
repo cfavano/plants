@@ -16,12 +16,187 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Test</p>
+  <div class="jumbotron">
+    <div class="header-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="img-responsive logo" src="images/logo.png" alt="Garden Nation Logo">
+          </div>
+          <div class="col-md-9 hidden-xs">
+            <ul class="nav navbar-nav ">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gardening Info</a></li>
+              <li><a href="#">Plant Library</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a class="btn btn-success " href="checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row banner-wrap">
+        <div class="col-md-12">
+          <p class="h1 text-center">Create Today</p>
+          <a href="#" class="btn btn-default">View Pro Tips <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
       </div>
     </div>
   </div>
+  <div class="store-wrap container">
+      <div class="row">
+        <div class="col-md-9">
+          <h1>Plants for Sale</h1>
+          <!-- Plant Selection Form -->
+          <form class="options-form" action="#" method="post">  
+            <h2 class="h3">Vegetable</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/vegetable/bell-pepper.jpg" alt="Bell Pepper">
+                <p class="item-name">Bell Pepper</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="plant1-1" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3  col-sm-6">
+                <img class="img-responsive" src="images/plant-store/vegetable/hot-banana-pepper.jpg" alt="">
+                <p class="item-name">Hot Banana Pepper</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="plant1-2" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3  col-sm-6">
+                <img class="img-responsive" src="images/plant-store/vegetable/tomato.jpg" alt="">
+                <p class="item-name">Tomato</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="plant1-3" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/vegetable/cauliflower.jpg" alt="">
+                <p class="item-name">Purple Cauliflower</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+            </div>
+            <h2 class="h3">Fruit</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/fruit/cherry.jpg" alt="">
+                <p class="item-name">Cherry</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/fruit/blueberry.jpg" alt="">
+                <p class="item-name">Blueberry</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100"value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/fruit/apple.jpg" alt="">
+                <p class="item-name">Apple</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity"min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/fruit/pear.jpg" alt="">
+                <p class="item-name">Pear</p>
+                <p>Add to Cart</p>
+               <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+              </div>
+            </div>
+            <h2 class="h3">Herb</h2>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/herb/basil.jpg" alt="">
+                <p class="item-name">Basil</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/herb/cilantro.jpg" alt="">
+                <p class="item-name">Cilantro</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/herb/mint.jpg" alt="">
+                <p class="item-name">Mint</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <img class="img-responsive" src="images/plant-store/herb/rosemary.jpg" alt="">
+                <p class="item-name">Rosemary</p>
+                <div class="form-group quantity">
+                  <label for="quantity">Quantity: </label>
+                  <input type="number" name="quantity" min="0" max="100" value="0">
+                </div>
+                <p>Add to Cart</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <a class="btn btn-default btn-lg store-link" href="#">View All Items for Sale<i class="fa fa-pagelines"></i></a>
+          <p class="h3">We're here to help! </p>
+            <div class="well">
+              <form action="#" method="post" id="contact">
+                <!-- Name -->
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Name">
+                </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <input class="form-control" type="email" placeholder="Email">
+                </div>
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <input  class="form-control bfh-phone" type="text" data-format="(ddd) ddd-dddd" placeholder="Phone Number"> 
+                </div>
+                <!-- Text Area -->
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="Contact Us"></textarea>
+                </div>
+                <button class="btn btn-success" type="submit">Submit</button>
+              </form>
+            </div> 
+        </div>
+      </div>
+    </div>
 </body>
 </html>
