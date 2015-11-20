@@ -16,6 +16,165 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- MODAL Checkout Form -->
+  <div class="modal fade" id="checkout-form" tabindex="-1" role="dialog" aria-labelledby="my-checkout-form">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Checkout Form</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post" class="checkout-form">
+            <div class="row">
+              <!-- Order Form -->
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <!-- First Name -->
+                 <!-- <label for="fistname">First Name:</label>-->
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                  <!-- Last Name -->
+                  <!--<label for="fistname">Last Name:</label>-->
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div> 
+                <div class="form-group">
+                  <!-- Last Name -->
+                  <!--<label for="email">Email:</label>-->
+                  <input type="email" class="form-control" placeholder="Email">
+                </div> 
+                <div class="form-group">
+                  <!-- Street Address -->
+                  <!--<label for="address">Address:</label> -->
+                  <input type="address" class="form-control" placeholder="Address">
+                </div> 
+                <div class="row"> 
+                  <div class="form-group col-md-6">
+                    <!-- City  -->
+                    <!--<label for="city">City:</label>-->
+                    <input type="city" class="form-control" placeholder="City">
+                  </div> 
+                  <div class="form-group col-md-2">
+                    <!-- State Form Control -->
+                    <!--<label for="State">State:</label>-->
+                    <select name="state">
+                      <option value="AL">AL</option>
+                      <option value="AK">AK</option>
+                      <option value="AZ">AZ</option>
+                      <option value="AR">AR</option>
+                      <option value="CA">CA</option>
+                      <option value="CO">CO</option>
+                      <option value="CT">CT</option>
+                      <option value="DE">DE</option>
+                      <option value="DC">DC</option>
+                      <option value="FL">FL</option>
+                      <option value="GA">GA</option>
+                      <option value="HI">HI</option>
+                      <option value="ID">ID</option>
+                      <option value="IL">IL</option>
+                      <option value="IN">IN</option>
+                      <option value="IA">IA</option>
+                      <option value="KS">KS</option>
+                      <option value="KY">KY</option>
+                      <option value="LA">LA</option>
+                      <option value="ME">ME</option>
+                      <option value="MD">MD</option>
+                      <option value="MA">MA</option>
+                      <option value="MI">MI</option>
+                      <option value="MN">MN</option>
+                      <option value="MS">MS</option>
+                      <option value="MO">MO</option>
+                      <option value="MT">MT</option>
+                      <option value="NE">NE</option>
+                      <option value="NV">NV</option>
+                      <option value="NH">NH</option>
+                      <option value="NJ">NJ</option>
+                      <option value="NM">NM</option>
+                      <option value="NY">NY</option>
+                      <option value="NC">NC</option>
+                      <option value="ND">ND</option>
+                      <option value="OH">OH</option>
+                      <option value="OK">OK</option>
+                      <option value="OR">OR</option>
+                      <option value="PA">PA</option>
+                      <option value="RI">RI</option>
+                      <option value="SC">SC</option>
+                      <option value="SD">SD</option>
+                      <option value="TN">TN</option>
+                      <option value="TX">TX</option>
+                      <option value="UT">UT</option>
+                      <option value="VT">VT</option>
+                      <option value="VA">VA</option>
+                      <option value="WA">WA</option>
+                      <option value="WV">WV</option>
+                      <option value="WI">WI</option>
+                      <option value="WY">WY</option>
+                    </select>       
+                  </div>
+                  <div class="form-group col-md-4">
+                    <!-- Zip  -->
+                    <!--<label for="zip">Zip:</label> -->
+                    <input type="zip" class="form-control" placeholder="zip">
+                  </div> 
+                </div>
+                <p>Billing address same as shipping? </p>
+                  <input type="radio" name="same-shipping" value="yes" />
+                  Yes
+                  <input type="radio" name="same-shiping" value="no" />
+                  No
+                <hr>
+                <p class="credit-info">Payment Information</p>
+                <div class="form-group">
+                  <!-- Cardholder Name  -->
+                  <!--<label for="credit-name">Cardholder Name:</label> -->
+                  <input type="credit-name" class="form-control" placeholder="Cardholder Name">
+                </div> 
+                <div class="form-group ">
+                  <!-- Credit Card Number  -->
+                  <!--<label for="credeit-number">Credit Card Number:</label> -->
+                  <input type="text" class="form-control" placeholder="Credit Card Number">
+                </div> 
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <!-- Expiration Date  -->
+                    <!--<label for="expiration">Exp Date:</label> -->
+                    <input type="date" class="form-control" placeholder="Expiration Date">
+                  </div> 
+                  <div class="form-group col-md-6">
+                    <!-- Security COde  -->
+                    <!--<label for="security-code">Security Code:</label> -->
+                  <input type="code" class="form-control" placeholder="Security Code">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <button type="submit" class="btn btn-success">Place Order</button>
+                  </div>
+                  <div class="col-sm-6">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div> 
+              <!-- Order Summary -->
+              <div class="col-sm-4">
+                <div class="order-container">
+                  <p class="text-center summary-header">Summary</p>
+                  <ul>
+                    <li>Item - Quantity</li>
+                    <li>Item - Quantity</li>
+                    <li>Item - Quantity</li>
+                    <li>Item - Quantity</li>
+                  </ul>
+                  <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Edit Order</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="jumbotron">
     <div class="header-wrap">
       <div class="container">
@@ -30,8 +189,8 @@
               <li><a href="#">Plant Library</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Store</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a class="btn btn-success " href="checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
+              <li><a href="#" >Contact</a></li>
+              <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
             </ul>
           </div>
         </div>
@@ -46,7 +205,27 @@
       </div>
     </div>
   </div>
-  <div class="store-wrap container">
+  <!--
+  <div class="container main-wrap">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Top Gardening Tips</h1>
+      </div>
+      <div class="">   
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-responsive" src="images/placeholder.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <p class="h4"><a href="#">Article Name</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a class="text-right read-more" href="#">Read More</a>
+        </div>
+      </div>
+    </div>  
+  -->
+    <div class="store-wrap container">
       <div class="row">
         <div class="col-md-9">
           <h1>Plants for Sale</h1>
