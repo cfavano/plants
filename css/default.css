@@ -72,22 +72,54 @@ a:hover {
   font-weight: bold;
 }
 
-.jumbotron {
+.jumbotron.banner {
   padding: 0;
   min-height: 800px;
+  margin-bottom: 0;
   background: url('../images/banner.jpg') no-repeat top center;
   background-size: cover; 
 }
+
+.jumbotron.library {
+  background: #b5f1d1;
+}
+
+.jumbotron.library .h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.jumbotron.library p{
+  font-size: 20px;
+}
+
+.jumbotron.library .btn{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #37b270;
+  border-color: #ccc;
+  
+}
+
+.jumbotron.library .btn:hover {
+  background-color: #19a259;
+}
+
 .header-wrap {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10;
   width: 100%;
   background: rgba(0,0,0, .25);
 }
+
 .logo {
   margin-top: 11px;
 }
+
 .navbar-nav {
   float: right;
   padding: 17px 0;
@@ -110,6 +142,7 @@ a:hover {
   border-radius: 4px;
   padding: 5px 10px;
 }
+
 .nav > li > a:hover {
     color: #fff;
     background-color: #81deac;
@@ -134,7 +167,7 @@ a:hover {
 }
 
 .banner-wrap .h1 {
-  margin-top: 140px;
+  margin-top: 180px;
   margin-bottom: 35px;
   color: #fff;
   font-weight: bold;
@@ -179,7 +212,7 @@ a:hover {
 }
 
 .btn.store-link:hover {
-  background: #81deac;
+  background: #19a259;
 }
 
 /* Gardening Tips Library Page */
