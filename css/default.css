@@ -149,7 +149,8 @@ a:hover {
   padding: 5px 10px;
 }
 
-.nav > li > a:hover {
+.nav > li > a:hover,
+.nav > li > a:focus {
     color: #fff;
     background-color: #81deac;
     border-color: #4cae4c;
