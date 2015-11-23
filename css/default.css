@@ -259,8 +259,15 @@ a:hover {
 .plant-type a:hover figcaption {
   background: rgba(0,0,0, .6);
 }
+.plant-type .carousel-control{
+  width: 7%;
+}
+.plant-type .carousel-control.left,
+.plant-type .carousel-control.right {
+  background-image: none;
+}
 
-/* Plant Gallery Page*/
+/* Garden Gallery Page*/
 .gallery-wrap [class*=' col-'] {
   margin: 0;
   padding: 0;
