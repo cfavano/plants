@@ -3,7 +3,7 @@
 <head>
    <title>Gardening Website</title>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=mode">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <!-- External CSS -->
@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="css/default.css">
   <!-- Bootstrap JS -->
-  <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -31,7 +30,6 @@
               <div class="col-sm-8">
                 <div class="form-group">
                   <!-- First Name -->
-                 <!-- <label for="fistname">First Name:</label>-->
                   <input type="text" class="form-control" placeholder="First Name">
                 </div>
                 <div class="form-group">
@@ -41,23 +39,19 @@
                 </div> 
                 <div class="form-group">
                   <!-- Last Name -->
-                  <!--<label for="email">Email:</label>-->
                   <input type="email" class="form-control" placeholder="Email">
                 </div> 
                 <div class="form-group">
                   <!-- Street Address -->
-                  <!--<label for="address">Address:</label> -->
                   <input type="address" class="form-control" placeholder="Address">
                 </div> 
                 <div class="row"> 
                   <div class="form-group col-md-6">
                     <!-- City  -->
-                    <!--<label for="city">City:</label>-->
                     <input type="city" class="form-control" placeholder="City">
                   </div> 
                   <div class="form-group col-md-2">
                     <!-- State Form Control -->
-                    <!--<label for="State">State:</label>-->
                     <select name="state">
                       <option value="AL">AL</option>
                       <option value="AK">AK</option>
@@ -114,7 +108,6 @@
                   </div>
                   <div class="form-group col-md-4">
                     <!-- Zip  -->
-                    <!--<label for="zip">Zip:</label> -->
                     <input type="zip" class="form-control" placeholder="zip">
                   </div> 
                 </div>
@@ -127,24 +120,20 @@
                 <p class="credit-info">Payment Information</p>
                 <div class="form-group">
                   <!-- Cardholder Name  -->
-                  <!--<label for="credit-name">Cardholder Name:</label> -->
                   <input type="credit-name" class="form-control" placeholder="Cardholder Name">
                 </div> 
                 <div class="form-group ">
                   <!-- Credit Card Number  -->
-                  <!--<label for="credeit-number">Credit Card Number:</label> -->
                   <input type="text" class="form-control" placeholder="Credit Card Number">
                 </div> 
                 <div class="row">
                   <div class="form-group col-md-6">
                     <!-- Expiration Date  -->
-                    <!--<label for="expiration">Exp Date:</label> -->
                     <input type="date" class="form-control" placeholder="Expiration Date">
                   </div> 
                   <div class="form-group col-md-6">
                     <!-- Security COde  -->
-                    <!--<label for="security-code">Security Code:</label> -->
-                  <input type="code" class="form-control" placeholder="Security Code">
+                    <input type="code" class="form-control" placeholder="Security Code">
                   </div>
                 </div>
                 <div class="row">
@@ -189,7 +178,7 @@
               <li><a href="#">Plant Library</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Store</a></li>
-              <li><a href="#" >Contact</a></li>
+              <li><a href="#">Contact</a></li>
               <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
             </ul>
           </div>
@@ -224,10 +213,9 @@
   <div class="store-wrap container">
     <div class="row">
       <div class="col-md-9">
-        <h1>Plants for Sale</h1>
         <!-- Plant Selection Form -->
         <form class="options-form" action="#" method="post">  
-          <h2 class="h3">Vegetable</h2>
+          <h2 class="h3">Vegetable For Sale</h2>
           <div class="row">
             <div class="col-md-3 col-sm-6">
               <img class="img-responsive" src="images/plant-store/vegetable/bell-pepper.jpg" alt="Bell Pepper">
@@ -266,11 +254,29 @@
               <p>Add to Cart</p>
             </div>
           </div>
-          <h2 class="h3">Fruit</h2>
+          <h2 class="h3">Perennials for Sale</h2>
           <div class="row">
             <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/fruit/cherry.jpg" alt="">
-              <p class="item-name">Cherry</p>
+              <img class="img-responsive" src="images/plant-store/perennials/blue-pasque.jpg" alt="">
+              <p class="item-name">Blue Pasque Flower</p>
+              <div class="form-group quantity">
+                <label for="quantity">Quantity: </label>
+                <input type="number" name="quantity" min="0" max="100" value="0">
+                <p>Add to Cart</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img class="img-responsive" src="images/plant-store/perennials/day-lily.jpg" alt="">
+              <p class="item-name">Day Lily Flower</p>
+              <div class="form-group quantity">
+                <label for="quantity">Quantity: </label>
+                <input type="number" name="quantity" min="0" max="100" value ="0">
+              </div>
+              <p>Add to Cart</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img class="img-responsive" src="images/plant-store/perennials/iris-siberica.jpg" alt="">
+              <p class="item-name">Iris Siberica Flower</p>
               <div class="form-group quantity">
                 <label for="quantity">Quantity: </label>
                 <input type="number" name="quantity" min="0" max="100" value="0">
@@ -278,110 +284,79 @@
               <p>Add to Cart</p>
             </div>
             <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/fruit/blueberry.jpg" alt="">
-              <p class="item-name">Blueberry</p>
+              <img class="img-responsive" src="images/plant-store/perennials/liatris-spicata.jpg" alt="">
+              <p class="item-name">Liatris Spicata Flower</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100"value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/fruit/apple.jpg" alt="">
-              <p class="item-name">Apple</p>
-              <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity"min="0" max="100" value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/fruit/pear.jpg" alt="">
-              <p class="item-name">Pear</p>
-              <p>Add to Cart</p>
-             <div class="form-group quantity">
                 <label for="quantity">Quantity: </label>
                 <input type="number" name="quantity" min="0" max="100" value="0">
               </div>
+              <p>Add to Cart</p>
             </div>
           </div>
-          <!--
-          <h2 class="h3">Herb</h2>
-          <div class="row">
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/herb/basil.jpg" alt="">
-              <p class="item-name">Basil</p>
-              <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/herb/cilantro.jpg" alt="">
-              <p class="item-name">Cilantro</p>
-              <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/herb/mint.jpg" alt="">
-              <p class="item-name">Mint</p>
-              <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <img class="img-responsive" src="images/plant-store/herb/rosemary.jpg" alt="">
-              <p class="item-name">Rosemary</p>
-              <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
-              </div>
-              <p>Add to Cart</p>
-            </div>
-          </div> -->
         </form>
       </div>
       <div class="col-md-3">
         <a class="btn btn-default btn-lg store-link" href="#">View All Items for Sale<i class="fa fa-pagelines"></i></a>
-        <p class="h3">We're here to help! </p>
-          <div class="well">
-            <form action="#" method="post" id="contact">
-              <!-- Name -->
-              <div class="form-group">
-                <input class="form-control" type="text" placeholder="Name">
-              </div>
-              <!-- Email -->
-              <div class="form-group">
-                <input class="form-control" type="email" placeholder="Email">
-              </div>
-              <!-- Phone Number -->
-              <div class="form-group">
-                <input  class="form-control bfh-phone" type="text" data-format="(ddd) ddd-dddd" placeholder="Phone Number"> 
-              </div>
-              <!-- Text Area -->
-              <div class="form-group">
-                <textarea class="form-control" rows="5" placeholder="Contact Us"></textarea>
-              </div>
-              <button class="btn btn-success" type="submit">Submit</button>
-            </form>
-          </div> 
+        <p class="h3 text-center">We're here to help! </p>
+        <div class="well">
+          <form action="#" method="post" id="contact">
+            <!-- Name -->
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Name">
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+              <input class="form-control" type="email" placeholder="Email">
+            </div>
+            <!-- Phone Number -->
+            <div class="form-group">
+              <input  class="form-control bfh-phone" type="text" data-format="(ddd) ddd-dddd" placeholder="Phone Number"> 
+            </div>
+            <!-- Text Area -->
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Contact Us"></textarea>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+          </form>
+        </div> 
       </div>
     </div>
   </div>
-  <div class="gallery-wrap container-fluid">
-
-    <div class="row">
-    <!--  <div class="col-md-12">
-        <h1>Get Inspired!</h1>
+  <div class="jumbotron plant-type">
+    <div class="container">
+      <div class="col-md-4 col-sm-6">
+        <a href="#">
+          <figure>
+            <img class="img-responsive" src="images/plant-types/trees.jpg" alt="Trees Example">
+            <figcaption class="h4">Trees</figcaption>
+          </figure>
+        </a>
       </div>
-    -->
-      <!-- desktop view: row with large middle photo -->
+      <div class="col-md-4 col-sm-6">
+        <a href="#">
+          <figure>
+            <img class="img-responsive" src="images/plant-types/bulbs.jpg" alt="Bulbs Example">
+            <figcaption class="h4">Bulbs</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="#">
+          <figure>
+            <img class="img-responsive" src="images/plant-types/vegetables.jpg" alt="Vegetable Example">
+            <figcaption class="h4">Vegetable</figcaption>
+          </figure>
+        </a>   
+      </div>
+    </div>
+  </div>
+  <div class="gallery-wrap container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="h1">Get Inspired!</p>
+        <p class="h1">Gardens from Fellow Bugs</p>
+      </div>
+        <!-- desktop view: row with large middle photo -->
       <div class="col-md-12">
         <div class="row middle-feature"  >
           <div class="col-md-3 col-sm-4 col-xs-4">
@@ -392,11 +367,11 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <p class="modal-title">Image 1</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title">Image 1</p>
                   </div>
                   <div class="modal-body">
-                    <img class="img-responsive "src="images/gallery/gallery1.jpg">
+                    <img class="img-responsive" src="images/gallery/gallery1.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -408,11 +383,11 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <p class="modal-title">Image 2</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title">Image 2</p>
                   </div>
                   <div class="modal-body">
-                    <img class="img-responsive "src="images/gallery/gallery2.jpg">
+                    <img class="img-responsive" src="images/gallery/gallery2.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -426,11 +401,11 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <p class="modal-title">Image 3</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title">Image 3</p>
                   </div>
                   <div class="modal-body">
-                    <img class="img-responsive "src="images/gallery/gallery3.jpg">
+                    <img class="img-responsive" src="images/gallery/gallery3.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -440,23 +415,25 @@
             <div class="row">
               <div class="col-md-12 col-sm-6 col-xs-6">
                 <a data-toggle="modal" data-target=".image-4">
-              <img class="img-responsive" src="images/gallery/gallery4.jpg" alt="">
-            </a> 
-            <div class="modal fade image-4">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <p class="modal-title">Image 4</p>
-                  </div>
-                  <div class="modal-body">
-                    <img class="img-responsive "src="images/gallery/gallery4.jpg">
+                  <img class="img-responsive" src="images/gallery/gallery4.jpg" alt="">
+                </a> 
+              </div> 
+              <div class="modal fade image-4">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <p class="modal-title">Image 4</p>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-responsive" src="images/gallery/gallery4.jpg" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-12 col-sm-6 col-xs-6">
+          <div class="col-md-3 col-sm-6 col-xs-6">
             <a data-toggle="modal" data-target=".image-5">
               <img class="img-responsive" src="images/gallery/gallery5.jpg" alt="">
             </a> 
@@ -464,11 +441,11 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <p class="modal-title">Image 5</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title">Image 5</p>
                   </div>
                   <div class="modal-body">
-                    <img class="img-responsive "src="images/gallery/gallery5.jpg">
+                    <img class="img-responsive" src="images/gallery/gallery5.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -477,210 +454,88 @@
         </div>
       </div>
     </div>
-    <!-- desktop view: row with large LEFT photo -->
-    <!--
-    <div class="row left-feature">
-      <div class="col-md-8 col-sm-4 col-xs-4">
-        <a data-toggle="modal" data-target=".image-6">
-          <img class="img-responsive" src="images/gallery/gallery6.jpg" alt="">
+    <!-- desktop view: images are in 4 even columns -->
+    <div class="row even">
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <a data-toggle="modal" data-target=".image-9">
+          <img class="img-responsive" src="images/gallery/gallery9.jpg" alt="">
         </a> 
-        <div class="modal fade image-6">
+        <div class="modal fade image-9">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <p class="modal-title">Image 6</p>
-              </div>
-              <div class="modal-body">
-                <img class="img-responsive "src="images/gallery/gallery6.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-md-12 col-sm-4 col-xs-4">
-            <a data-toggle="modal" data-target=".image-7">
-              <img class="img-responsive" src="images/gallery/gallery7.jpg" alt="">
-            </a> 
-            <div class="modal fade image-7">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <p class="modal-title">Image 7</p>
-                  </div>
-                  <div class="modal-body">
-                    <a data-toggle="modal" data-target=".image-7">
-                      <img class="img-responsive" src="images/gallery/gallery7.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>  
-            <div class="col-md-12 col-sm-4 col-xs-4">
-              <a data-toggle="modal" data-target=".image-8">
-                <img class="img-responsive" src="images/gallery/gallery8.jpg" alt="">
-              </a> 
-              <div class="modal fade image-8">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <p class="modal-title">Image 8</p>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-responsive "src="images/gallery/gallery8.jpg">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div> -->
-        <!-- desktop view: images are in 4 even columns -->
-      <div class="row even">
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <a data-toggle="modal" data-target=".image-9">
-            <img class="img-responsive" src="images/gallery/gallery9.jpg" alt="">
-          </a> 
-          <div class="modal fade image-9">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <p class="modal-title">Image 9</p>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive "src="images/gallery/gallery9.jpg">
-                </div>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/gallery/gallery9.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-4">
-          <a data-toggle="modal" data-target=".image-10">
-            <img class="img-responsive" src="images/gallery/gallery10.jpg" alt="">
-          </a> 
-          <div class="modal fade image-10">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-4">
+        <a data-toggle="modal" data-target=".image-10">
+          <img class="img-responsive" src="images/gallery/gallery10.jpg" alt="">
+        </a> 
+        <div class="modal fade image-10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <p class="modal-title">Image 10</p>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive "src="images/gallery/gallery10.jpg">
-                </div>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/gallery/gallery10.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-4">
-          <a data-toggle="modal" data-target=".image-11">
-            <img class="img-responsive" src="images/gallery/gallery11.jpg" alt="">
-          </a> 
-          <div class="modal fade image-11">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-4">
+        <a data-toggle="modal" data-target=".image-11">
+          <img class="img-responsive" src="images/gallery/gallery11.jpg" alt="">
+        </a> 
+        <div class="modal fade image-11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <p class="modal-title">Image 11</p>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive "src="images/gallery/gallery11.jpg">
-                </div>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/gallery/gallery11.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-4">
-          <a data-toggle="modal" data-target=".image-12">
-            <img class="img-responsive" src="images/gallery/gallery12.jpg" alt="">
-          </a> 
-          <div class="modal fade image-12">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-4">
+        <a data-toggle="modal" data-target=".image-12">
+          <img class="img-responsive" src="images/gallery/gallery12.jpg" alt="">
+        </a> 
+        <div class="modal fade image-12">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <p class="modal-title">Image 12</p>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive "src="images/gallery/gallery12.jpg">
-                </div>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="images/gallery/gallery12.jpg" alt="">
               </div>
             </div>
           </div>
         </div>
-      </div>
-        <!-- desktop view: row with large RIGHT photo -->
-        <!--
-      <div class="row right-feature">
-        <div class="col-md-4 col-sm-4 col-xs-4">
-        
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <a data-toggle="modal" data-target=".image-13">
-                <img class="img-responsive" src="images/gallery/gallery13.jpg" alt="">
-              </a> 
-              <div class="modal fade image-13">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <p class="modal-title">Image 13</p>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-responsive "src="images/gallery/gallery13.jpg">
-                    </div>
-                  </div>
-                </div>
-              </div> 
-            </div>  
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <a data-toggle="modal" data-target=".image-14">
-                <img class="img-responsive" src="images/gallery/gallery14.jpg" alt="">
-              </a> 
-              <div class="modal fade image-14">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <p class="modal-title">Image 14</p>
-                    </div>
-                    <div class="modal-body">
-                      <img class="img-responsive "src="images/gallery/gallery14.jpg">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-        </div>
-        <div class="col-md-8 col-sm-8 col-xs-8">
-          <a data-toggle="modal" data-target=".image-15">
-            <img class="img-responsive" src="images/gallery/gallery15.jpg" alt="">
-          </a> 
-          <div class="modal fade image-15">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <p class="modal-title">Image 15</p>
-                </div>
-                <div class="modal-body">
-                  <img class="img-responsive "src="images/gallery/gallery15.jpg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      -->
       </div>
     </div>
-
+  </div>
+  <div class="footer-wrap container">
+    <div class="row">
+      <div class="col-md-12 hidden-sm">
+        <p class="text-center">&copy; Garden Bug, Inc. All Rights Reserved.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
