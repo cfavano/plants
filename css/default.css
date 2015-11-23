@@ -240,25 +240,37 @@ a:hover {
 }
 /* Plant Library Page */
 .plant-type figure {
-  position: relative;
+ /* position: relative;
   margin-bottom: 15px;
+  */
+
 }
 
-.plant-type figcaption.h4 {
-  position: absolute;
-  bottom: 0;
+.plant-type img {
+  border-radius: 50%;
+  padding: 0 30px;
+}
+
+.plant-type figcaption p {
+  color: #000;
+  font-size: 15px;
+}
+
+.plant-type figcaption p.h4 {
   width: 100%;
   margin-bottom: 0;
   padding: 15px;
-  color: #fff;
+  color: #248c54;
+  font-size: 18px;
   font-weight: bold;
-  text-align: center;
   letter-spacing: 1px;
-  background: rgba(0,0,0, .5);
 }
-
+.plant-type figcaption p.library-link {
+  color: #248c54;
+  font-weight: bold;
+}
 .plant-type a:hover figcaption {
-  background: rgba(0,0,0, .6);
+ /* background: rgba(0,0,0, .6); */
 }
 .plant-type .carousel-control{
   width: 7%;
