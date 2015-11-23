@@ -208,6 +208,15 @@ a:hover {
   margin: auto;
 }
 
+.store-wrap .cart-add {
+  text-decoration: underline;
+  color: #248c54;
+}
+
+.store-wrap .cart-add:hover {
+  color: #81deac;
+}
+
 .store-link {
   width: 100%;
 }
