@@ -8,8 +8,8 @@ body {
   }
 }
 
-h1, 
-h2,
+h1, .h1
+h2, .h2
 h3, .h3,
 h4, .h4,
 h5, .h4,
@@ -24,43 +24,6 @@ h1 {
 
 h2 {
   font-size: 26px;
-}
-
-.font-showcase {
-  font-size: 60px;
-}
-.font-showcase span {
-  font-weight: bold;
-}
-
-.color-block {
-  margin-top: 35px;
-  padding-left: 15px;
-}
-
-.color-container {
-  height: 75px;
-  width: 100%;
-}
-
-.color1 {
-  background: #248c54;
-}
-
-.color2 {
-  background: #19a259; 
-}
-
-.color3 {
-  background: #37b270;  
-}
-
-.color4 {
-  background: #81deac;  
-}
-
-.color5 {
-  background: #b5f1d1;  
 }
 
 a {
@@ -113,7 +76,7 @@ a:hover {
 }
 
 .jumbotron.plant-type {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0;
   padding-bottom: 0;
   background-color: #b5f1d1;
@@ -362,6 +325,7 @@ a:hover {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; 
 }
+
 .store-wrap .btn-sm.cart-add:hover i {
   background:#fff;
   color: #248c54;
@@ -391,36 +355,16 @@ a:hover {
   background: #19a259;
 }
 
+/* Plant Type Library Page */
 .library-wrap .col-md-8 p.h2 {
-    margin-top: 0;
-  }
-
+  margin-top: 0;
+}
 
 @media (max-width: @screen-sm-min) {
-  .library-wrap .col-md-8.col-sm-12 p.h2 {
-    margin-top: 20px!important;
+.library-wrap .col-md-8.col-sm-12 p.h2 {
+  margin-top: 20px!important;
   }
 }
-
-
-/* Gardening Tips Library Page 
-.library-gardening .read-more {
-  display: block;
-} 
-
-.library-gardening .media-left a {
-  display: block;
-  height: 64px;
-  width: 64px;
-}
-
-.library-gardening img.media-object {
-  width: 64px;
-  height: 64px;
-}
-*/
-
-/* Plant Type Library Page */
 .plant-type img {
   border-radius: 50%;
 }
@@ -487,11 +431,18 @@ a:hover {
   background-image: none;
 }
 
-/* Garden Gallery Page*/
+@media screen and (min-width: 768px) {
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  margin-top: -50px;
+}
+
+/* Garden Gallery */
 .gallery-wrap [class*=' col-'] {
   margin: 0;
   padding: 0;
 }
+
 .gallery-wrap a img:hover {
   cursor: pointer;
   cursor: hand;
@@ -501,16 +452,16 @@ a:hover {
   position: relative;
   top: 258px;
   z-index: 10;
+  padding: 10px;
   display: block;
+  max-width: 486px;
+  margin: 0 auto;
   text-align: center;
   color: #fff;
   background: rgba(0,0,0,.5);
-  padding: 10px;
-  max-width: 486px;
-  margin: 0 auto;
 }
 
-/* Store Section */
+/* Store Form Section */
 .options-form p {
   margin: 0;
   text-align: center;
@@ -525,10 +476,11 @@ a:hover {
   font-weight: bold;
 }
 
-/*Checkout form */
+/* Checkout form */
 .checkout-form .credit-info {
   margin-top: 15px;
 }
+
 .checkout-form button.btn-success {
   width: 100%;
 }
@@ -543,7 +495,7 @@ a:hover {
   border-radius: 4px;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   border: 1px solid #ccc;
-  padding: 6px 0;
+  padding: 6px 0 5px;
 }
 
 .checkout-form .summary-header {
