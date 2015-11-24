@@ -314,7 +314,9 @@ a:hover {
 }
 
 .store-wrap img {
-  margin: auto;
+  margin: 20px auto 10px;
+  max-width: 325px;
+  width: 100%;
 }
 
 .store-wrap .cart-add {
@@ -324,6 +326,12 @@ a:hover {
 
 .store-wrap .cart-add:hover {
   color: #81deac;
+}
+
+@media (max-width: 970px){
+  .store-wrap h2 {
+   text-align: center;
+  }
 }
 
 .store-link {
@@ -379,13 +387,13 @@ a:hover {
   padding: 0 30px;
 }
 
-.plant-type .col-sm-6 img {
+.plant-type .col-sm-4 img {
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 340px;
   width: 100%;
 }
 
-.plant-type .col-sm-6 figcaption {
+.plant-type .col-sm-4 figcaption {
   padding-bottom: 30px;
 }
 
