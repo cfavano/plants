@@ -1,6 +1,13 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+
+@media (max-width: 275px){
+  body {
+    overflow-x: hidden;
+  }
+}
+
 h1, 
 h2,
 h3, .h3,
@@ -29,10 +36,12 @@ h2 {
 .col-md-2 {
   padding: 0;
 }
+
 .color-block {
   margin-top: 35px;
   padding-left: 15px;
 }
+
 .color-container {
   height: 75px;
   width: 100%;
@@ -122,12 +131,33 @@ a:hover {
 }
 
 .logo {
-  margin-top: 11px;
+  margin: 11px 0;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border:none;
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 .navbar-nav {
   float: right;
   padding: 17px 0;
+}
+
+@media (max-width: 767px){
+  .navbar-nav {
+    float: none;
+    padding: 17px 0;
+  }
+}
+
+.navbar-brand {
+  height: auto; 
+  padding: 0 0 0 15px;  
 }
 
 .navbar-nav > li > a {
@@ -139,7 +169,41 @@ a:hover {
   margin: 0 5px;
 }
 
-.nav > li > a {
+.navbar-toggle {
+  background: #fff;
+  padding: 9px 7px 7px;
+}
+
+.navbar-toggle .icon-bar {
+  width: 15px;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+  background: #81deac;
+}
+
+.navbar-toggle div.mobile-nav {
+  float: left;
+}
+
+.navbar-toggle p.nav-label {
+  float: left;
+  margin: -1px 0 0;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a{
   font-weight: bold;
   text-shadow: 0 0 5px #231f20;
   font-size: 17px;
@@ -148,28 +212,66 @@ a:hover {
   padding: 5px 10px;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-    color: #fff;
-    background-color: #81deac;
-    border-color: #4cae4c;
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: #81deac;
+  border-color: #4cae4c;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0; 
 }
 
 .nav > li > a.btn {
   border: none;
 }
 
-.nav > li > a.btn-success{
+.nav > li > a.btn-success {
   color:#fff;
   background: #37b270;
   text-shadow:none;
 }
+
+@media (max-width: 767px) {
+  .navbar-toggle:hover p.nav-label,
+  .navbar-toggle:focus p.nav-label {
+    color: #fff;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .navbar-collapse {
+    background: #fff;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #333;
+    text-shadow: none;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    background: #248c54;
+  }
+
+  .nav > li > a.btn-success {
+    color: #333; 
+    background: transparent; 
+    text-align: left;
+    width: 100%;
+  }
+}
+
 .nav > li > a.btn-success .fa{
   padding-left: 10px;
 }
 
 .nav > li > a.btn-success:hover{
-  background: #81deac;
+  background: #248c54;
 }
 
 .banner-wrap .h1 {
@@ -351,7 +453,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* Store Page */
+/* Store Section */
 .options-form p {
   margin: 0;
   text-align: center;

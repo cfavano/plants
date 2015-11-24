@@ -111,7 +111,7 @@
                     <input type="zip" class="form-control" placeholder="zip">
                   </div> 
                 </div>
-                <p>Billing address same as shipping? </p>
+                <p>Billing address same as shipping?</p>
                   <input type="radio" name="same-shipping" value="yes" />
                   Yes
                   <input type="radio" name="same-shiping" value="no" />
@@ -168,20 +168,33 @@
     <div class="header-wrap">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
-            <img class="img-responsive logo" src="images/logo.png" alt="Garden Nation Logo">
-          </div>
-          <div class="col-md-9 hidden-xs">
-            <ul class="nav navbar-nav ">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Gardening Info</a></li>
-              <li><a href="#">Plant Library</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Store</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
-            </ul>
-          </div>
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <div class="mobile-nav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </DIV>
+                <p class="nav-label">MENU</p>
+              </button>
+              <img class="img-responsive navbar-brand logo" src="images/logo.png" alt="Garden Bug Logo">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#gardening-tip">Gardening Info</a></li>
+                <li><a href="#plant-library">Plant Library</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
@@ -194,7 +207,7 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron library">
+  <div class="jumbotron library" id="gardening-tip">
     <div class="container library-wrap">
       <div class="row">        
         <div class="col-md-4 col-sm-12">
@@ -210,7 +223,7 @@
       </div>
     </div>
   </div>    
-  <div class="store-wrap container">
+  <div class="store-wrap container" id="store">
     <div class="row">
       <div class="col-md-9">
         <!-- Plant Selection Form -->
@@ -297,7 +310,7 @@
       </div>
       <div class="col-md-3">
         <a class="btn btn-default btn-lg store-link" href="#">View All Items for Sale <i class="fa fa-arrow-circle-right"></i></a>
-        <p class="h3 text-center">We're here to help! </p>
+        <p class="h3 text-center" id="contact">We're here to help!</p>
         <div class="well">
           <form action="#" method="post" id="contact">
             <!-- Name -->
@@ -322,7 +335,7 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron plant-type">
+  <div class="jumbotron plant-type" id="plant-library">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="container">
@@ -418,7 +431,7 @@
       </a> 
     </div>
   </div>
-  <div class="gallery-wrap container">
+  <div class="gallery-wrap container" id="gallery">
     <div class="row">
       <div class="col-md-12">
         <p class="h1">Get Inspired!</p>
