@@ -351,7 +351,7 @@ a:hover {
 }
 
 .btn.store-link {
-  margin-top: 54px;
+  margin: 74px auto 20px;
   color: #fff;
   background:#37b270; 
 }
@@ -392,6 +392,9 @@ a:hover {
 /* Plant Type Library Page */
 .plant-type img {
   border-radius: 50%;
+}
+
+.plant-type figure {
   padding: 0 30px;
 }
 
