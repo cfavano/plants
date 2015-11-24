@@ -184,15 +184,23 @@ a:hover {
   background: #81deac;
 }
 
-.navbar-toggle div.mobile-nav {
+.navbar-toggle span.mobile-nav {
+  display: block;
   float: left;
 }
 
-.navbar-toggle p.nav-label {
+.navbar-toggle span.nav-label {
+  display: block;
   float: left;
   margin: -1px 0 0;
-  font-size: 12px;
   padding-left: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.navbar-toggle:hover span.nav-label, 
+.navbar-toggle:focus span.nav-label {
+  color: #fff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {

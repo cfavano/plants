@@ -7,12 +7,12 @@
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <!-- External CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="stylesheet" href="css/default.css">
   <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
   <!-- MODAL Checkout Form -->
@@ -34,7 +34,6 @@
                 </div>
                 <div class="form-group">
                   <!-- Last Name -->
-                  <!--<label for="fistname">Last Name:</label>-->
                   <input type="text" class="form-control" placeholder="Last Name">
                 </div> 
                 <div class="form-group">
@@ -173,12 +172,12 @@
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <div class="mobile-nav">
+                <span class="mobile-nav">
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                </DIV>
-                <p class="nav-label">MENU</p>
+                </span>
+                <span class="nav-label">Menu</span>
               </button>
               <img class="img-responsive navbar-brand logo" src="images/logo.png" alt="Garden Bug Logo">
             </div>
@@ -190,7 +189,7 @@
                 <li><a href="#plant-library">Plant Library</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#store">Store</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact-us">Contact</a></li>
                 <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
               </ul>
             </div>
@@ -234,8 +233,8 @@
               <img class="img-responsive" src="images/plant-store/vegetable/bell-pepper.jpg" alt="Bell Pepper">
               <p class="item-name">Bell Pepper: $10.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="plant1-1" min="0" max="100" value="0">
+                <label for="quantity-bellpepper">Quantity: </label>
+                <input type="number" name="bellpepper" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -243,8 +242,8 @@
               <img class="img-responsive" src="images/plant-store/vegetable/hot-banana-pepper.jpg" alt="">
               <p class="item-name">Hot Banana Pepper: $7.50</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="plant1-2" min="0" max="100" value="0">
+                <label for="quantity-bananapepper">Quantity: </label>
+                <input type="number" name="banana-pepper" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -252,8 +251,8 @@
               <img class="img-responsive" src="images/plant-store/vegetable/tomato.jpg" alt="">
               <p class="item-name">Tomato: $5.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="plant1-3" min="0" max="100" value="0">
+                <label for="quantity-tomato">Quantity: </label>
+                <input type="number" name="tomato" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -261,8 +260,8 @@
               <img class="img-responsive" src="images/plant-store/vegetable/cauliflower.jpg" alt="">
               <p class="item-name">Purple Cauliflower: $15.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity:</label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
+                <label for="quantity-cauliflower">Quantity:</label>
+                <input type="number" name="purple-cauliflower" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -273,8 +272,8 @@
               <img class="img-responsive" src="images/plant-store/perennials/blue-pasque.jpg" alt="">
               <p class="item-name">Blue Pasque Flower: $10.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
+                <label for="quantity-pasque">Quantity: </label>
+                <input type="number" name="pasque-flower" min="0" max="100" value="0">
                 <p class="cart-add">Add to Cart</p>
               </div>
             </div>
@@ -282,8 +281,8 @@
               <img class="img-responsive" src="images/plant-store/perennials/day-lily.jpg" alt="">
               <p class="item-name">Day Lily Flower: $10.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value ="0">
+                <label for="quantity-daylily">Quantity: </label>
+                <input type="number" name="day-lily" min="0" max="100" value ="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -291,8 +290,8 @@
               <img class="img-responsive" src="images/plant-store/perennials/iris-siberica.jpg" alt="">
               <p class="item-name">Iris Siberica Flower: $10.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
+                <label for="quantity-iris">Quantity: </label>
+                <input type="number" name="iris-siberica" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -300,8 +299,8 @@
               <img class="img-responsive" src="images/plant-store/perennials/liatris-spicata.jpg" alt="">
               <p class="item-name">Liatris Spicata Flower: $10.00</p>
               <div class="form-group quantity">
-                <label for="quantity">Quantity: </label>
-                <input type="number" name="quantity" min="0" max="100" value="0">
+                <label for="quantity-spicata">Quantity: </label>
+                <input type="number" name="spicata-flower" min="0" max="100" value="0">
               </div>
               <p class="cart-add">Add to Cart</p>
             </div>
@@ -310,7 +309,7 @@
       </div>
       <div class="col-md-3">
         <a class="btn btn-default btn-lg store-link" href="#">View All Items for Sale <i class="fa fa-arrow-circle-right"></i></a>
-        <p class="h3 text-center" id="contact">We're here to help!</p>
+        <p class="h3 text-center" id="contact-us">We're here to help!</p>
         <div class="well">
           <form action="#" method="post" id="contact">
             <!-- Name -->
@@ -339,87 +338,87 @@
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="container">
-      <div class="carousel-inner" role="listbox">
-        <!-- first slide of plant library-->
-        <div class="item active">
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/trees.jpg" alt="Trees Example">
-                <figcaption>
-                  <p class="h4 text-center">Trees</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>
+        <div class="carousel-inner" role="listbox">
+          <!-- first slide of plant library-->
+          <div class="item active">
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/trees.jpg" alt="Trees Example">
+                  <figcaption>
+                    <p class="h4 text-center">Trees</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/bulbs.jpg" alt="Bulbs Example">
+                  <figcaption>
+                    <p class="h4 text-center">Bulbs</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/vegetables.jpg" alt="Vegetable Example">
+                  <figcaption> 
+                    <p class="h4 text-center">Vegetable</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>   
+            </div>
           </div>
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/bulbs.jpg" alt="Bulbs Example">
-                <figcaption>
-                  <p class="h4 text-center">Bulbs</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/vegetables.jpg" alt="Vegetable Example">
-                <figcaption> 
-                  <p class="h4 text-center">Vegetable</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>   
-          </div>
-        </div>
-        <!-- second slide of plant library-->
-        <div class="item">
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/perennials.jpg" alt="Perennial Flowers Example">
-                <figcaption>
-                  <p class="h4 text-center">Perennials</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/climbers.jpg" alt="Climbers Example">
-                <figcaption> 
-                  <p class="h4 text-center">Climbers</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <a href="#">
-              <figure>
-                <img class="img-responsive" src="images/plant-types/shrubs.jpg" alt="Whole Library of Plants Image">
-                <figcaption>
-                  <p class="h4 text-center">View Entire Plant Library</p>
-                  <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
-                  <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
-                </figcaption>
-              </figure>
-            </a>   
+          <!-- second slide of plant library-->
+          <div class="item">
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/perennials.jpg" alt="Perennial Flowers Example">
+                  <figcaption>
+                    <p class="h4 text-center">Perennials</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/climbers.jpg" alt="Climbers Example">
+                  <figcaption> 
+                    <p class="h4 text-center">Climbers</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <a href="#">
+                <figure>
+                  <img class="img-responsive" src="images/plant-types/shrubs.jpg" alt="Whole Library of Plants Image">
+                  <figcaption>
+                    <p class="h4 text-center">View Entire Plant Library</p>
+                    <p class="text-center">At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+                    <p  class="library-link text-center">Read More <i class="fa fa-arrow-circle-right"></i></p>
+                  </figcaption>
+                </figure>
+              </a>   
+            </div>
           </div>
         </div>
       </div>
-    </div>
       <!-- Controls -->        
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -535,7 +534,7 @@
         </div>
       </div>
     </div>
-    <!-- desktop view: images are in 4 even columns -->
+    <!-- Desktop view: images are in 4 even columns -->
     <div class="row even">
       <div class="col-md-3 col-sm-3 col-xs-12">
         <a data-toggle="modal" data-target=".image-9">
