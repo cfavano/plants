@@ -483,6 +483,7 @@ a:hover {
 
 .checkout-form button.btn-success {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /* Order Summary in Checkout Form */
@@ -498,7 +499,7 @@ a:hover {
   padding: 6px 0 5px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 970px){
   .checkout-form .col-md-2 {
     padding: 0;
   }
@@ -515,6 +516,10 @@ a:hover {
   list-style-type: none;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.checkout-form li {
+  text-align: center;
 }
 
 .checkout-form .order-container button {
