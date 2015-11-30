@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-@media (max-width: 275px) {
+@media (max-width: 295px) {
   body {
     overflow-x: hidden;
   }
@@ -110,15 +110,7 @@ a:hover {
 }
 
 .navbar-nav {
-  float: right;
   padding: 17px 0;
-}
-
-@media (max-width: 767px) {
-  .navbar-nav {
-    float: none;
-    padding: 17px 0;
-  }
 }
 
 .navbar-brand {
@@ -197,6 +189,12 @@ a:hover {
   padding-right: 0;
   padding-left: 0; 
 }
+@media (min-width: 991px) {
+  .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
 .nav > li > a.btn {
   border: none;
@@ -206,6 +204,12 @@ a:hover {
   color:#fff;
   background: #37b270;
   text-shadow:none;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    margin-right: 0; 
+  }
 }
 
 @media (max-width: 767px) {
@@ -331,6 +335,7 @@ a:hover {
   padding: 3px 6px 3px 4px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; 
+  transition: 1s;
 }
 
 .store-wrap .btn-sm.cart-add:hover i {
