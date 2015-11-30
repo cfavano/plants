@@ -2,14 +2,14 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-@media (max-width: 275px){
+@media (max-width: 275px) {
   body {
     overflow-x: hidden;
   }
 }
 
-h1, .h1
-h2, .h2
+h1, .h1,
+h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h4,
@@ -58,11 +58,11 @@ a:hover {
   font-size: 30px;
 }
 
-.jumbotron.library p{
+.jumbotron.library p {
   font-size: 20px;
 }
 
-.jumbotron.library .btn{
+.jumbotron.library .btn {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
@@ -108,7 +108,7 @@ a:hover {
   padding: 17px 0;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .navbar-nav {
     float: none;
     padding: 17px 0;
@@ -234,11 +234,11 @@ a:hover {
   }
 }
 
-.nav > li > a.btn-success .fa{
+.nav > li > a.btn-success .fa {
   padding-left: 10px;
 }
 
-.nav > li > a.btn-success:hover{
+.nav > li > a.btn-success:hover {
   background: #248c54;
 }
 
@@ -272,7 +272,7 @@ a:hover {
   padding: 9px 23px;
 }
 
-.banner-wrap .btn:hover{
+.banner-wrap .btn:hover {
   background: #37b270;
 }
 
@@ -286,7 +286,7 @@ a:hover {
   width: 100%;
 }
 
-.store-wrap .options-form .form-group input{
+.store-wrap .options-form .form-group input {
   display: block;
   max-width: 125px;
   margin: 0 auto;
@@ -331,7 +331,7 @@ a:hover {
   color: #248c54;
 }
 
-@media (max-width: 970px){
+@media (max-width: 970px) {
   .store-wrap h2 {
    text-align: center;
   }
@@ -341,7 +341,7 @@ a:hover {
   width: 100%;
 }
 
-.store-link .fa{
+.store-link .fa {
   padding-left: 5px;
 }
 
@@ -403,7 +403,7 @@ a:hover {
   letter-spacing: 1px;
 }
 
-.plant-type a:hover figcaption p.h4{
+.plant-type a:hover figcaption p.h4 {
   color: #37b270;
 }
 
@@ -422,7 +422,7 @@ a:hover {
   border-radius: 4px;
 }
 
-.plant-type .carousel-control{
+.plant-type .carousel-control {
   width: 7%;
 }
 
@@ -467,7 +467,7 @@ a:hover {
   text-align: center;
 }
 
-.options-form .form-group.quantity{
+.options-form .form-group.quantity {
   max-width: 125px;
   margin: 0 auto;
 }
@@ -528,7 +528,7 @@ a:hover {
   margin: 0 auto 10px;
 }
 
-.footer-wrap .row{
+.footer-wrap .row {
   margin-top: 50px;
   margin-bottom: 30px;
 }
