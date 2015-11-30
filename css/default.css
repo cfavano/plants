@@ -350,6 +350,10 @@ a:hover {
   }
 }
 
+.store-wrap #contact-us {
+  margin-bottom: 28px;
+}
+
 .store-link {
   width: 100%;
 }
