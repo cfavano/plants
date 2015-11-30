@@ -16,154 +16,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <!-- MODAL Checkout Form -->
-  <div class="modal fade" id="checkout-form" tabindex="-1" role="dialog" aria-labelledby="my-checkout-form">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Checkout Form</h4>
-        </div>
-        <div class="modal-body">
-          <form action="#" method="post" class="checkout-form">
-            <div class="row">
-              <!-- Order Form -->
-              <div class="col-sm-8">
-                <div class="form-group">
-                  <!-- First Name -->
-                  <input type="text" class="form-control" placeholder="First Name">
-                </div>
-                <div class="form-group">
-                  <!-- Last Name -->
-                  <input type="text" class="form-control" placeholder="Last Name">
-                </div> 
-                <div class="form-group">
-                  <!-- Last Name -->
-                  <input type="email" class="form-control" placeholder="Email">
-                </div> 
-                <div class="form-group">
-                  <!-- Street Address -->
-                  <input type="address" class="form-control" placeholder="Address">
-                </div> 
-                <div class="row"> 
-                  <div class="form-group col-md-6">
-                    <!-- City  -->
-                    <input type="city" class="form-control" placeholder="City">
-                  </div> 
-                  <div class="form-group col-md-2 col-sm-2 col-xs-2">
-                    <!-- State Form Control -->
-                    <select name="state">
-                      <option value="AL">AL</option>
-                      <option value="AK">AK</option>
-                      <option value="AZ">AZ</option>
-                      <option value="AR">AR</option>
-                      <option value="CA">CA</option>
-                      <option value="CO">CO</option>
-                      <option value="CT">CT</option>
-                      <option value="DE">DE</option>
-                      <option value="DC">DC</option>
-                      <option value="FL">FL</option>
-                      <option value="GA">GA</option>
-                      <option value="HI">HI</option>
-                      <option value="ID">ID</option>
-                      <option value="IL">IL</option>
-                      <option value="IN">IN</option>
-                      <option value="IA">IA</option>
-                      <option value="KS">KS</option>
-                      <option value="KY">KY</option>
-                      <option value="LA">LA</option>
-                      <option value="ME">ME</option>
-                      <option value="MD">MD</option>
-                      <option value="MA">MA</option>
-                      <option value="MI">MI</option>
-                      <option value="MN">MN</option>
-                      <option value="MS">MS</option>
-                      <option value="MO">MO</option>
-                      <option value="MT">MT</option>
-                      <option value="NE">NE</option>
-                      <option value="NV">NV</option>
-                      <option value="NH">NH</option>
-                      <option value="NJ">NJ</option>
-                      <option value="NM">NM</option>
-                      <option value="NY">NY</option>
-                      <option value="NC">NC</option>
-                      <option value="ND">ND</option>
-                      <option value="OH">OH</option>
-                      <option value="OK">OK</option>
-                      <option value="OR">OR</option>
-                      <option value="PA">PA</option>
-                      <option value="RI">RI</option>
-                      <option value="SC">SC</option>
-                      <option value="SD">SD</option>
-                      <option value="TN">TN</option>
-                      <option value="TX">TX</option>
-                      <option value="UT">UT</option>
-                      <option value="VT">VT</option>
-                      <option value="VA">VA</option>
-                      <option value="WA">WA</option>
-                      <option value="WV">WV</option>
-                      <option value="WI">WI</option>
-                      <option value="WY">WY</option>
-                    </select>       
-                  </div>
-                  <div class="form-group col-md-4 col-sm-10 col-xs-10">
-                    <!-- Zip  -->
-                    <input type="zip" class="form-control" placeholder="zip">
-                  </div> 
-                </div>
-                <p>Billing address same as shipping?</p>
-                  <input type="radio" name="same-shipping" value="yes" />
-                  Yes
-                  <input type="radio" name="same-shiping" value="no" />
-                  No
-                <hr>
-                <p class="credit-info">Payment Information</p>
-                <div class="form-group">
-                  <!-- Cardholder Name  -->
-                  <input type="credit-name" class="form-control" placeholder="Cardholder Name">
-                </div> 
-                <div class="form-group ">
-                  <!-- Credit Card Number  -->
-                  <input type="text" class="form-control" placeholder="Credit Card Number">
-                </div> 
-                <div class="row">
-                  <div class="form-group col-md-6">
-                    <!-- Expiration Date  -->
-                    <input type="date" class="form-control" placeholder="Expiration Date">
-                  </div> 
-                  <div class="form-group col-md-6">
-                    <!-- Security COde  -->
-                    <input type="code" class="form-control" placeholder="Security Code">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 col-sm-6 col-xs-6">
-                    <button type="submit" class="btn btn-success">Place Order</button>
-                  </div>
-                  <div class="col-md-6 col-sm-6 col-xs-6">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                  </div>
-                </div>
-              </div> 
-              <!-- Order Summary -->
-              <div class="col-sm-4">
-                <div class="order-container">
-                  <p class="text-center summary-header">Summary</p>
-                  <ul>
-                    <li>Iris - 2</li>
-                    <li>Tomato - 2</li>
-                    <li>Day Lily - 1</li>
-                    <li>Bell Pepper - 4</li>
-                  </ul>
-                  <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Edit Order</button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="jumbotron banner">
     <div class="header-wrap">
       <div class="container">
@@ -192,6 +44,7 @@
                 <li><a href="#store">Store</a></li>
                 <li><a href="#contact-us">Contact</a></li>
                 <li><a class="btn btn-success" type="button" data-toggle="modal" data-target="#checkout-form">Checkout<i class="fa fa-shopping-cart"></i></a></li>
+                <!-- checkout form modal is below footer mark up -->
               </ul>
             </div>
           </nav>
@@ -615,6 +468,154 @@
     <div class="row">
       <div class="col-md-12 hidden-sm">
         <p class="text-center">&copy; Garden Bug, Inc. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL Checkout Form -->
+  <div class="modal fade" id="checkout-form" tabindex="-1" role="dialog" aria-labelledby="my-checkout-form">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Checkout Form</h4>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post" class="checkout-form">
+            <div class="row">
+              <!-- Order Form -->
+              <div class="col-sm-8">
+                <div class="form-group">
+                  <!-- First Name -->
+                  <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                  <!-- Last Name -->
+                  <input type="text" class="form-control" placeholder="Last Name">
+                </div> 
+                <div class="form-group">
+                  <!-- Last Name -->
+                  <input type="email" class="form-control" placeholder="Email">
+                </div> 
+                <div class="form-group">
+                  <!-- Street Address -->
+                  <input type="address" class="form-control" placeholder="Address">
+                </div> 
+                <div class="row"> 
+                  <div class="form-group col-md-6">
+                    <!-- City  -->
+                    <input type="city" class="form-control" placeholder="City">
+                  </div> 
+                  <div class="form-group col-md-2 col-sm-2 col-xs-2">
+                    <!-- State Form Control -->
+                    <select name="state">
+                      <option value="AL">AL</option>
+                      <option value="AK">AK</option>
+                      <option value="AZ">AZ</option>
+                      <option value="AR">AR</option>
+                      <option value="CA">CA</option>
+                      <option value="CO">CO</option>
+                      <option value="CT">CT</option>
+                      <option value="DE">DE</option>
+                      <option value="DC">DC</option>
+                      <option value="FL">FL</option>
+                      <option value="GA">GA</option>
+                      <option value="HI">HI</option>
+                      <option value="ID">ID</option>
+                      <option value="IL">IL</option>
+                      <option value="IN">IN</option>
+                      <option value="IA">IA</option>
+                      <option value="KS">KS</option>
+                      <option value="KY">KY</option>
+                      <option value="LA">LA</option>
+                      <option value="ME">ME</option>
+                      <option value="MD">MD</option>
+                      <option value="MA">MA</option>
+                      <option value="MI">MI</option>
+                      <option value="MN">MN</option>
+                      <option value="MS">MS</option>
+                      <option value="MO">MO</option>
+                      <option value="MT">MT</option>
+                      <option value="NE">NE</option>
+                      <option value="NV">NV</option>
+                      <option value="NH">NH</option>
+                      <option value="NJ">NJ</option>
+                      <option value="NM">NM</option>
+                      <option value="NY">NY</option>
+                      <option value="NC">NC</option>
+                      <option value="ND">ND</option>
+                      <option value="OH">OH</option>
+                      <option value="OK">OK</option>
+                      <option value="OR">OR</option>
+                      <option value="PA">PA</option>
+                      <option value="RI">RI</option>
+                      <option value="SC">SC</option>
+                      <option value="SD">SD</option>
+                      <option value="TN">TN</option>
+                      <option value="TX">TX</option>
+                      <option value="UT">UT</option>
+                      <option value="VT">VT</option>
+                      <option value="VA">VA</option>
+                      <option value="WA">WA</option>
+                      <option value="WV">WV</option>
+                      <option value="WI">WI</option>
+                      <option value="WY">WY</option>
+                    </select>       
+                  </div>
+                  <div class="form-group col-md-4 col-sm-10 col-xs-10">
+                    <!-- Zip  -->
+                    <input type="zip" class="form-control" placeholder="zip">
+                  </div> 
+                </div>
+                <p>Billing address same as shipping?</p>
+                  <input type="radio" name="same-shipping" value="yes" />
+                  Yes
+                  <input type="radio" name="same-shiping" value="no" />
+                  No
+                <hr>
+                <p class="credit-info">Payment Information</p>
+                <div class="form-group">
+                  <!-- Cardholder Name  -->
+                  <input type="credit-name" class="form-control" placeholder="Cardholder Name">
+                </div> 
+                <div class="form-group ">
+                  <!-- Credit Card Number  -->
+                  <input type="text" class="form-control" placeholder="Credit Card Number">
+                </div> 
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <!-- Expiration Date  -->
+                    <input type="date" class="form-control" placeholder="Expiration Date">
+                  </div> 
+                  <div class="form-group col-md-6">
+                    <!-- Security COde  -->
+                    <input type="code" class="form-control" placeholder="Security Code">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <button type="submit" class="btn btn-success">Place Order</button>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-6">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                  </div>
+                </div>
+              </div> 
+              <!-- Order Summary -->
+              <div class="col-sm-4">
+                <div class="order-container">
+                  <p class="text-center summary-header">Summary</p>
+                  <ul>
+                    <li>Iris - 2</li>
+                    <li>Tomato - 2</li>
+                    <li>Day Lily - 1</li>
+                    <li>Bell Pepper - 4</li>
+                  </ul>
+                  <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Edit Order</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
