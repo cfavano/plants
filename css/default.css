@@ -71,6 +71,12 @@ a:hover {
   border-color: #ccc;
 }
 
+@media (max-width: 308px) {
+  .jumbotron.library .btn  {
+    font-size: 14px;
+  }
+}
+
 .jumbotron.library .btn:hover {
   background-color: #19a259;
 }
@@ -314,6 +320,7 @@ a:hover {
 .store-wrap .btn-sm.cart-add:hover {
   color:#fff;
   background: #248c54;
+  transition: 1s;
 }
 
 .store-wrap .btn-sm.cart-add i {
@@ -327,8 +334,9 @@ a:hover {
 }
 
 .store-wrap .btn-sm.cart-add:hover i {
-  background:#fff;
-  color: #248c54;
+  background :#37b270;
+  color: #fff;
+  transition: 1s;
 }
 
 @media (max-width: 970px) {
