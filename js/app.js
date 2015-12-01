@@ -8,3 +8,4 @@ var showMore = storeButton.addEventListener('click', addPlants, false);
 function addPlants() {
   document.getElementsByClassName('hidden-store')[0].setAttribute('class', 'unhidden-store show');
 }
+

@@ -31,7 +31,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #248c54;
   text-decoration: none;
 }
@@ -355,7 +356,8 @@ a:hover {
 }
 
 .store-link {
-  width: 100%;
+  margin-top: 20px;
+  font-size: 12px;  
 }
 
 .store-link .fa {
@@ -363,7 +365,6 @@ a:hover {
 }
 
 .btn.store-link {
-  margin: 74px auto 20px;
   color: #fff;
   background:#37b270; 
 }
@@ -548,4 +549,12 @@ a:hover {
 .footer-wrap .row {
   margin-top: 50px;
   margin-bottom: 30px;
+}
+
+.btn-success {
+  background: #37b270;
+}
+
+.btn-success:hover {
+  background: #248c54;
 }
