@@ -352,11 +352,15 @@ a:focus {
 }
 
 .store-wrap #contact-us {
+  margin-top: 70px;
   margin-bottom: 28px;
 }
 
+.store-wrap .buttons-container {
+  margin-top: 35px;
+}
+
 .store-link {
-  margin-top: 20px;
   font-size: 12px;  
 }
 
